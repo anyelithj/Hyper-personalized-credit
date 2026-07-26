@@ -19,8 +19,3 @@ podras clonar y/o forkear el codigo de Crédito Hiperpersonalizado haciendo uso 
 - **Frontend (Next.js):** ubícate en la carpeta `frontend/`, instala todas las dependencias con `npm install` y corre el proyecto con `npm run dev`.
 - Guía paso a paso completa, con la base de datos, la siembra del usuario admin y Docker: ver [`COMO-LEVANTAR-EL-PROYECTO.md`](./COMO-LEVANTAR-EL-PROYECTO.md).
 **********************
-### Autoras ✒️
-*
-* Anyelith Jacobo   - Desarrolladora FullStart- [anyelithj](https://github.com/anyelithj)
-* Juanita Herrera   - Desarrolladora frontend - (https://github.com/juanitalorenaherrera)
-* Juanita Vega     -  Diseñador UI & UX- [](https://github.com/)
