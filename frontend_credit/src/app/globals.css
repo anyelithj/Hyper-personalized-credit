@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Colsubsidio Official Brand Colors */
+  --blue: #0067B1;
+  --blue-hover: #005493;
+  --blue-mid: #1A79C4;
+  --blue-dark: #092C4C;
+  --blue-deep: #061E35;
+  --blue-light: #EBF3FA;
+
+  /* Brand yellow (Colsubsidio yellow accent) */
+  --yellow: #FFD100;
+  --yellow-hover: #E6BB00;
+  --yellow-dark: #E6BB00;
+  --yellow-deep: #FDBB0A;
+  --yellow-light: #FFF9E6;
+
+  /* Neutrals */
+  --ink: #092C4C;
+  --paper: #F4F6F9;
+  --card: #FFFFFF;
+  --text: #1E2838;
+  --muted: #526075;
+  --muted-2: #808D9E;
+  --border: #D8E1ED;
+  --border-2: #E6ECF5;
+
+  /* Admin Table Neutrals */
+  --admin-bg-gray: #CECECE;
+  --admin-header-gray: #4A4A4A;
+
+  /* Status */
+  --green: #17875A;
+  --green-light: #E1F7EE;
+  --rose: #D6423F;
+  --rose-light: #FCEAEA;
+  --gray-badge: #5B6472;
+  --gray-badge-light: #EDEFF3;
+
+  /* Legacy aliases */
+  --teal: var(--blue);
+  --teal-dark: var(--blue-hover);
+  --teal-light: var(--blue-light);
+  --gold: var(--yellow);
+  --gold-light: var(--yellow-light);
+
+  --shadow: 0 8px 28px rgba(11, 32, 66, 0.08);
+  --shadow-lg: 0 18px 48px rgba(11, 32, 66, 0.18);
+  --radius: 14px;
+  --radius-sm: 8px;
+  --font-display: 'Poppins', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--paper);
+  color: var(--text);
+  font-family: var(--font-body);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  letter-spacing: -0.01em;
+}
+
+.mono {
+  font-family: var(--font-mono);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+/* Custom Eyebrow styling */
+.eyebrow {
+  font-family: var(--font-display);
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--blue);
+  font-weight: 700;
+}
+
+/* Category pill badges — dark pill per brand style */
+.cat-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  height: 24px;
+  padding: 0 12px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.02em;
+  font-family: var(--font-mono);
+  background: #3A3A3A;
+  color: #FFFFFF;
+}
+
+/* Status pill badges */
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  font-family: var(--font-mono);
+  border: 1px solid currentColor;
+}
+.status-pendiente { background: #EFEFEF; color: #555555; border-color: #D5D5D5; }
+.status-enviada { background: #FFF7D6; color: #8A6A00; border-color: #FFE58F; }
+.status-aceptada { background: #FFF7D6; color: #8A6A00; border-color: #FFE58F; }
+.status-rechazada { background: var(--rose-light); color: var(--rose); border-color: #FFA39E; }
+
+/* Decorative geometric triangles used across brand sections */
+.deco-triangles {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Animation keyframes */
+@keyframes chipIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-chip-in {
+  animation: chipIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
