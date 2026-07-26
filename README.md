@@ -23,4 +23,4 @@ podras clonar y/o forkear el codigo de Crédito Hiperpersonalizado haciendo uso 
 *
 * Anyelith Jacobo   - Desarrolladora FullStart- [anyelithj](https://github.com/anyelithj)
 * Junita Herrera   - Desarrolladora frontend - [](https://github.com/)
-* Junita Vega     -  Diseñador UI & UX- [](https://github.com/)
+* Juanita Vega     -  Diseñador UI & UX- [](https://github.com/)
