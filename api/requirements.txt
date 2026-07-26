@@ -1,8 +1,0 @@
-# Requerimientos de la API REST e Inferencia (FastAPI & JAX)
-jax>=0.10.0
-flax>=0.12.8
-fastapi>=0.110.0
-uvicorn>=0.28.0
-pydantic>=2.6.0
-numpy>=2.0.0
-httpx>=0.27.0
